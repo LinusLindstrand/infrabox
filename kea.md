@@ -214,9 +214,3 @@ curl -s --unix-socket /run/kea/kea4-ctrl-socket -X POST -H "Content-Type: applic
 - **Missing comma** between sibling keys in the same object (e.g. between `option-data` and `reservations`).
 - **Missing comma** between array elements (e.g. between two `subnet4` objects).
 - Comments: `//` and `/* */` are supported as a Kea/JSON extension for hand-edited files, but are stripped and **not preserved** if the config is ever rewritten via `config-set`/`config-write`. Use the `"comment"` key instead for anything that should survive that.
-
----
-
-## Full working configs
-
-The two complete, validated config files (`kea-dhcp4-server1.conf` / `kea-dhcp4-server2.conf`) were shared earlier in this conversation — pull the latest versions from there as the source of truth going forward. Copy each to `/etc/kea/kea-dhcp4.conf` on its respective host.

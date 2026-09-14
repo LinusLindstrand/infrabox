@@ -15,7 +15,7 @@ Two Kea DHCP4 servers behind an OPNsense relay, running in **hot-standby** HA mo
 | Primary   | kea-primary   | 10.20.2.41   |
 | Secondary | kea-secondary | 10.20.2.42   |
 
-Both servers listen on interface `eth0` and receive DHCP requests **relayed by OPNsense** if not on the same broadcast domain. OPNsense forwards client DISCOVER/REQUEST packets as unicast to both Kea servers.
+Each server is hosted as an LXC on proxmox and both servers listen on interface `eth0` and receive DHCP requests **relayed by OPNsense** if not on the same broadcast domain. OPNsense forwards client DISCOVER/REQUEST packets as unicast to both Kea servers.
 
 Subnets currently configured:
 - **VLAN 101** (`10.10.1.0/24`) — priv/devices, relay `10.10.1.1`, DNS `10.20.2.223`

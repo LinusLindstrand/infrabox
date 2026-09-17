@@ -1,5 +1,5 @@
 # infrabox
-A 10" rack which will house all of my *smaller* (and *critical*) LXC application.
+A Proxmox cluster which will house all of my *smaller* (and *critical*) LXC applications.
 
 ## Notes & Thoughts
 ### The infrabox will...

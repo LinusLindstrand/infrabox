@@ -1,5 +1,5 @@
 # infrabox
-A Proxmox cluster which will house all of my *smaller* (and *critical*) LXC applications.
+A Proxmox cluster which will house all of my **critical** LXC applications.
 
 ## Notes & Thoughts
 ### The infrabox will...
